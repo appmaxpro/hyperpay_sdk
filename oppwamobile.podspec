@@ -10,8 +10,8 @@ Pod::Spec.new do |s|
   s.source                 = { :path => '.' }
   s.cocoapods_version      = '>= 1.11.0'
   s.authors                = 'Nabil Moh'
-  s.pod_target_xcconfig    = { 'OTHER_LDFLAGS' => '-framework ios -framework ipworks3ds_sdk' }
-  s.preserve_paths = 'ios/OPPWAMobile.xcframework', 'ios/ipworks3ds_sdk'
-  s.vendored_frameworks = 'ios/OPPWAMobile.xcframework', 'ios/ipworks3ds_sdk.xcframework'
+  s.pod_target_xcconfig    = { 'OTHER_LDFLAGS' => '-framework OPPWAMobile -framework ipworks3ds_sdk' }
+  s.preserve_paths = 'OPPWAMobile/OPPWAMobile.xcframework', 'OPPWAMobile/ipworks3ds_sdk'
+  s.vendored_frameworks = 'OPPWAMobile/OPPWAMobile.xcframework', 'OPPWAMobile/ipworks3ds_sdk.xcframework'
   s.static_framework       = true
 end
